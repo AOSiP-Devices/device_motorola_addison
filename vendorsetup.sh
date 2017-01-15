@@ -1,3 +1,3 @@
-add_lunch_combo du_addison-userdebug
-add_lunch_combo du_addison-eng
-add_lunch_combo du_addison-user
+add_lunch_combo aosip_addison-userdebug
+add_lunch_combo aosip_addison-eng
+add_lunch_combo aosip_addison-user

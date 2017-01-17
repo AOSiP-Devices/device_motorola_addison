@@ -1,0 +1,30 @@
+[
+  {
+    "repository": "Albero97/android_kernel_motorola_msm8953",
+    "target_path": "kernel/motorola/msm8953",
+    "branch": "cm-14.1"
+  },
+  {
+    "repository": "Alberto97/proprietary_vendor_motorola",
+    "target_path": "vendor/motorola",
+    "branch": "cm-14.1"
+  },
+  {
+    "remote":      "laos",
+    "repository" : "android_hardware_qcom_audio",
+    "target_path": "hardware/qcom/audio-caf/msm8953",
+    "branch"     : "cm-14.1-caf-8996"
+  },
+  {
+    "remote":      "laos",
+    "repository" : "android_hardware_qcom_media",
+    "target_path": "hardware/qcom/media-caf/msm8953",
+    "branch"     : "cm-14.1-caf-8996"
+  },
+  {
+    "remote":      "laos",
+    "repository" : "android_hardware_qcom_display",
+    "target_path": "hardware/qcom/display-caf/msm8953",
+    "branch"     : "cm-14.1-caf-8996"
+  }
+]

@@ -7,24 +7,30 @@
   {
     "repository": "Alberto97/proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
-    "branch": "cm-14.1"
+    "branch": "cm-14.1-soak"
   },
   {
     "remote":      "laos",
     "repository" : "android_hardware_qcom_audio",
-    "target_path": "hardware/qcom/audio-caf/msm8953",
-    "branch"     : "cm-14.1-caf-8996"
+    "target_path": "hardware/qcom/audio-caf/msm8937",
+    "branch"     : "cm-14.1-caf-8937"
   },
   {
     "remote":      "laos",
     "repository" : "android_hardware_qcom_media",
-    "target_path": "hardware/qcom/media-caf/msm8953",
-    "branch"     : "cm-14.1-caf-8996"
+    "target_path": "hardware/qcom/media-caf/msm8937",
+    "branch"     : "cm-14.1-caf-8937"
   },
   {
     "remote":      "laos",
     "repository" : "android_hardware_qcom_display",
-    "target_path": "hardware/qcom/display-caf/msm8953",
-    "branch"     : "cm-14.1-caf-8996"
+    "target_path": "hardware/qcom/display-caf/msm8937",
+    "branch"     : "cm-14.1-caf-8937"
+  },
+  {
+    "remote":      "laos",
+    "repository" : "android_external_bson",
+    "target_path": "external/bson",
+    "branch"     : "cm-14.1"
   }
 ]

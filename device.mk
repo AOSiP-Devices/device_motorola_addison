@@ -58,6 +58,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
 # Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapgrowthlimit=192m \
+    dalvik.vm.heapsize=384m
+
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
@@ -87,6 +91,7 @@ PRODUCT_COPY_FILES +=  \
 
 # Camera
 PRODUCT_PACKAGES += \
+    Snap \
     libbson \
     libshim_camera
 
@@ -125,9 +130,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fingerprintd
 
+# For android_filesystem_config.h
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # GPS
 #PRODUCT_PACKAGES += \
 #    gps.msm8916
+
+# IMS
+PRODUCT_PACKAGES += \
+    libshim_ims
 
 # IPA Manager
 PRODUCT_PACKAGES += \

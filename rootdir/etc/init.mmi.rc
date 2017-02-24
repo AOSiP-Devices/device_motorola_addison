@@ -203,6 +203,8 @@ on boot
    chown system mot_tcmd /sys/bus/spi/devices/spi8.0/clk_enable
    chown system mot_tcmd /sys/bus/spi/devices/spi8.0/dev_enable
    chown system mot_tcmd /sys/bus/spi/devices/spi8.0/irq
+   chown system mot_tcmd /sys/bus/spi/devices/spi8.0/irq_cnt
+   chmod 0440 /sys/bus/spi/devices/spi8.0/irq_cnt
 
    # STML4 driver parameter permissions
    chown root mot_tcmd /sys/module/motosh/parameters/irq_disable
@@ -255,6 +257,7 @@ on property:ro.boot.dualsim=false
    setprop ro.telephony.default_network 10
 
 service adspd /system/bin/adspd
+   seclabel u:r:adspd:s0
    class main
    socket adspdsock stream 0660 system audio
    user audio
@@ -280,14 +283,12 @@ service hw_revs /system/bin/hardware_revisions.sh
     group system
     oneshot
 
-service mmi-boot-sh /init.mmi.boot.sh
-    seclabel u:r:mmi_boot:s0
+service mmi-boot-sh /system/bin/init.mmi.boot.sh
     class core
     user root
     oneshot
 
-service mmi-laser-sh /init.mmi.laser.sh
-    seclabel u:r:mmi_laser:s0
+service mmi-laser-sh /system/bin/init.mmi.laser.sh
     class core
     user root
     oneshot

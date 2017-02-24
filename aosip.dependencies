@@ -7,7 +7,7 @@
   {
     "repository": "Alberto97/proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
-    "branch": "cm-14.1-soak"
+    "branch": "cm-14.1"
   },
   {
     "remote":      "laos",
